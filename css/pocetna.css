@@ -1,0 +1,54 @@
+.info-omotac {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.baner-omotac {
+    min-width: 100%;
+    position: relative;
+    align-items: center;
+    display: block;
+    overflow: hidden;
+}
+
+.slajder {
+    height: 100%;
+    align-items: center;
+    display: none;
+}
+
+.slajder img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@media (min-width: 1200px) {
+    .info-omotac {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .info-omotac {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .info-omotac {
+        font-size: 8px;
+    }
+}

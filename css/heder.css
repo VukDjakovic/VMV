@@ -1,0 +1,131 @@
+:root {
+    --pozadina1: #0052D4;
+    --pozadina2: #65C7F7;
+    --tekst: #003b9a;
+    --hover-tekst: white;
+}
+
+.tamna-tema {
+    --pozadina1: #141E30;
+    --pozadina2: #243B55;
+    --tekst: #3b588f;
+    --hover-tekst: white;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: linear-gradient(to right, var(--pozadina1), var(--pozadina2));
+    color: var(--tekst);
+}
+
+.heder {
+    height: 70px;
+    border-top:2px solid;
+    border-bottom:2px solid;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, var(--pozadina1), var(--pozadina2));
+    z-index: 100;
+}
+
+.logo-omotac {
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 10px;
+    z-index: 5;
+}
+
+.logo {
+    align-content: center;
+    padding: 5px;
+}
+
+.navigacija {
+    display: flex;
+    padding: 4% 8%;
+    font-size: 25px;
+    font-weight: bold;
+    list-style: none;
+    margin-left: auto;
+}
+
+.navigacija a {
+    flex-grow: 1;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    color: var(--tekst);
+    transition: 300ms;
+}
+
+.navigacija a:hover {
+    color: var(--hover-tekst);
+    text-shadow: 5px 5px var(--tekst);
+}
+
+.meni-sadrzaj {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    left: 0;
+    justify-content: space-evenly;
+    font-weight: normal;
+    background: linear-gradient(to right, var(--pozadina1), var(--pozadina2));
+    z-index: 2;
+    text-align: center;
+    border-bottom: solid;
+}
+
+.meni-sadrzaj ul {
+    border-top: 2px solid;
+}
+
+.meni-sadrzaj h2 {
+    font-size: 25px;
+}
+
+#promena-teme {
+    display: flex;
+    margin: 50px 10px;
+    width: 150px;
+    height: auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--pozadina2);
+    color: var(--tekst);
+    border: 2px solid;
+    border-radius: 20%;
+    transition: 300ms;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#promena-teme:hover {
+    background-color: var(--pozadina1);
+    color: var(--hover-tekst);
+    box-shadow: 5px 5px var(--tekst);
+    text-shadow: 5px 5px var(--tekst);
+}
+
+@media (min-width: 1200px) {
+    .navigacija {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .navigacija {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navigacija {
+        font-size: 16px;
+    }
+}

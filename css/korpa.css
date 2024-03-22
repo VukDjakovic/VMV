@@ -1,0 +1,126 @@
+.omotac {
+    display: flex;
+  }
+  
+  .korpa, .porucivanje {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .korpa {
+    border-right: 2px solid;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  
+  .forma-grupa {
+    margin-bottom: 20px;
+  }
+
+  .forma-grupa label {
+    display: block;
+    text-align: left;
+    font-size: 25px;
+  }
+
+  .forma-grupa input {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #proizvodi-u-korpi {
+    text-align: center;
+  }
+
+  #proizvodi-u-korpi span {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .ime {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .dugme-omotac {
+    text-align: center;
+  }
+
+  .dugme-omotac button {
+    margin: 50px 10px;
+    height: auto;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--pozadina2);
+    color: var(--tekst);
+    border: 2px solid;
+    transition: 300ms;
+}
+
+.dugme-omotac button:hover {
+    background-color: var(--pozadina1);
+    color: var(--hover-tekst);
+    box-shadow: 5px 5px var(--tekst);
+    text-shadow: 5px 5px var(--tekst);
+}
+
+@media (min-width: 1200px) {
+    h2 {
+      font-size: 27px;
+    }
+
+    .forma-grupa label {
+      font-size: 22px;
+    }
+
+    .forma-grupa input {
+      font-size: 17px;
+    }
+
+    #proizvodi-u-korpi span {
+      font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .forma-grupa label {
+    font-size: 19px;
+  }
+
+  .forma-grupa input {
+    font-size: 14px;
+  }
+
+  #proizvodi-u-korpi span {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 21px;
+  }
+
+  .forma-grupa label {
+    font-size: 16px;
+  }
+
+  .forma-grupa input {
+    font-size: 11px;
+  }
+
+  #proizvodi-u-korpi span {
+    font-size: 16px;
+  }
+}
+  

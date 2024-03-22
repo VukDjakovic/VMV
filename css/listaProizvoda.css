@@ -1,0 +1,107 @@
+.lista-omotac {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+#lista-proizvoda {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 35px;
+}
+
+.proizvod {
+    border: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.proizvod img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.proizvod:hover img{
+    transform: scale(0.9);
+}
+
+.proizvod h3 {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.proizvod:hover h3 {
+    color: var(--hover-tekst);
+    text-shadow: 5px 5px var(--tekst);
+}
+
+.proizvod p {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.proizvod:hover p {
+    color: var(--hover-tekst);
+    text-shadow: 5px 5px var(--tekst);
+}
+
+.kupi-dugme {
+    height: auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--pozadina2);
+    color: var(--tekst);
+    transition: 300ms;
+}
+
+.proizvod:hover .kupi-dugme{
+    background-color: var(--pozadina1);
+    color: var(--hover-tekst);
+    box-shadow: 5px 5px var(--tekst);
+    text-shadow: 5px 5px var(--tekst);
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    #lista-proizvoda {
+        gap: 32px;
+    }
+
+    #proizvod h3 {
+        font-size: 22px;
+    }
+
+    #proizvod p {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #lista-proizvoda {
+        gap: 29px;
+    }
+
+    #proizvod h3 {
+        font-size: 19px;
+    }
+
+    #proizvod p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    #lista-proizvoda {
+        gap: 26px;
+    }
+
+    #proizvod h3 {
+        font-size: 16px;
+    }
+
+    #proizvod p {
+        font-size: 11px;
+    }
+}

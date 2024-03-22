@@ -1,0 +1,96 @@
+<DOCTYPE html>
+    <html lang="srb">
+        <head>
+            <title>VMV Muzička Prodavnica</title>
+            <link rel="icon" type="image/x-icon" href="img/ikonica.png">
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="css/heder.css">
+            <link rel="stylesheet" href="css/korpa.css">
+            <script src="js/hamburgerMeni.js"></script>
+            <script src="js/promenaTeme.js"></script>
+            <script src="js/korpa.js"></script>
+        </head>
+
+        <body>
+             <div class="heder">
+                  <div class="logo-omotac">
+                      <img class="logo" src="img/logo.png" alt="VMV">
+                  </div>
+                  <nav class="navigacija">
+                    <li><a href="index.html">Početna</a></li>
+                    <li class="meni">
+                        <a href="javascript:void(0)" class="meni-triger">Proizvodi</a>
+                        <div class="meni-sadrzaj">
+                            <div>
+                              <h1>Gitare</h1>
+                              <ul>
+                                <li><a href="akusticneGitare.html">Akustične Gitare</a></li>
+                               <li><a href="elektricneGitare.html">Električne Gitare</a></li>
+                                <li><a href="basGitare.html">Bas Gitare</a></li>
+                              </ul>
+                            </div>
+                            <div>
+                              <h1>Bubnjevi</h1>
+                              <ul>
+                                <li><a href="akusticniBubnjevi.html">Akustični Bubnjevi</a></li>
+                                <li><a href="elektricniBubnjevi.html">Električni Bubnjevi</a></li>
+                              </ul>
+                            </div>
+                            <div>
+                             <h1>Klaviri</h1>
+                              <ul>
+                                <li><a href="klasicniKlaviri.html">Klasični Klaviri</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                    </li>
+                    <li><a href="oNama.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="korpa.html">Korpa</a></li>
+                  </nav>
+                  <button id="promena-teme" onclick="temaDugme()">Promena Teme</button>
+                </div>
+
+                <div class="omotac">
+                  <div class="korpa">
+                    <h2>- Korpa -</h2>
+                    <div id="proizvodi-u-korpi"></div>
+                    <div class="dugme-omotac">
+                      <button id="brisanje-korpe">Obriši proizvode</button>
+                    </div>
+                  </div>
+                  <div class="porucivanje">
+                    <h2>- Poručivanje -</h2>
+                    <form id="forma">
+                      <div class="forma-grupa">
+                        <label for="ime">Ime:</label>
+                        <input type="text" id="ime" name="ime" required>
+                      </div>
+                      <div class="forma-grupa">
+                        <label for="prezime">Prezime:</label>
+                        <input type="text" id="prezime" name="prezime" required>
+                      </div>
+                      <div class="forma-grupa">
+                        <label for="grad">Grad:</label>
+                        <input type="text" id="grad" name="grad" required>
+                      </div>
+                      <div class="forma-grupa">
+                        <label for="adresa">Adresa:</label>
+                        <input type="text" id="adresa" name="adresa" required>
+                      </div>
+                      <div class="forma-grupa">
+                        <label for="telefon">Telefon:</label>
+                        <input type="tel" id="telefon" name="telefon" required>
+                      </div>
+                      <div class="forma-grupa">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                      </div>
+                      <div class="dugme-omotac">
+                        <button id="porucivanje-dugme" type="submit">Poruči</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+        </body>
+    </html>
